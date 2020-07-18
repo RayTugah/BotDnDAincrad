@@ -1,13 +1,14 @@
 const Discord = require('discord.js');
+const Discord = require('dotes.js');
 const bot = new Discord.Client();
 
 const token = 'NzMzNDQ5OTg5MTExNjc2OTM4.XxDYRw.Hz_OM8W9gi6tG83fXCIQEkdeNdc';
 
 const prefix = '?';
 
-var version = '__**v0.1.3**__';
+var version = '__**v0.1.4**__';
 
-var actualización = '_18-07-2020_';
+var actualización = '_19-07-2020_';
 
 bot.on('ready', () =>{
     console.log('Bot encendido!');
@@ -19,10 +20,11 @@ bot.on('message', message=>{
     if (message.content.indexOf(prefix) !== 0) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
-    const user = message.mentions.users.first(); // returns the user object if an user mention exists
+    const user = message.mentions.users.first(); // Devuelve la mención
     const nombre = args.slice(1).join(' '); // nombre del item (todo después de la mención)
     const command = args.shift().toLowerCase();
 
+//////////////// HECHIZOS ///////////////
     switch(command) {
         case 'hechizos':
             const embed_hechizo1sp = new Discord.MessageEmbed()
@@ -34,9 +36,7 @@ bot.on('message', message=>{
             .setThumbnail('https://i.imgur.com/b3pizy4.png')
             message.channel.send(embed_hechizo1sp);
             break;
-
-//////////////// HECHIZOS /////////////////
-
+//////////////////////////////////////// 
         case 'aaaaa':
             const embed_hechizos = new Discord.MessageEmbed()
             .setTitle('Hechizos')
@@ -47,31 +47,35 @@ bot.on('message', message=>{
             .setThumbnail('https://i.imgur.com/b3pizy4.png')
             message.channel.send(embed_hechizos);
             break;
-
-////////////////////////////////////////////
+//////////////// DOTES ////////////////
         case 'dotes':
+            message.delete()
             const embed_dotes = new Discord.MessageEmbed()
+            .setColor(0x00FFFB)
             .setTitle('Dotes')
+            .setURL('https://dndtools.net/feats/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .addField('Manual del Jugador', '?MJD', true)
             .addField('Manual del Jugador II', '?MJ2D', true)
             .addField('Complete Scoundrel', '?CSCD', true)
+            .addField('\u200b', '\u200b')
             .addField('Races of The Wild', '?RTWD', true)
             .addField('Complete Mage', '?CMD', true)
             .addField('Combatiente Completo', '?CCD', true)
+            .addField('\u200b', '\u200b')
             .addField('Especies Salvajes', '?ESD', true)
             .addField('Divino Completo', '?DCD', true)
             .addField('Races of Dragon', '?RODD', true)
-            .addField('Complete Scoundrel', '?CSCD', true)
-            .addField('Complete Scoundrel', '?CSCD', true)
-            .setColor(0x00FFFB)
+            .addField('\u200b', '\u200b')
+            .addField('Libro1', '?CSCD', true)
+            .addField('Libro2', '?CSCD', true)
             .setThumbnail('https://i.imgur.com/b3pizy4.png')
             message.channel.send(embed_dotes);
             break;
-
-//////////////// DOTES ///////////////// 
-        
+//////////////////////////////////////// 
 // A LA TERCERA VA LA VENCIDA
         case 'a':
+            message.delete()
             if(args[1] !== 'tercera') message.channel.send('Esta dote no existe, escríbela bien!');
             if(args[1] !== 'tercera') return;
             let la = args[0];
@@ -79,6 +83,8 @@ bot.on('message', message=>{
             let va = args[2];
             let vencida = args[3];
             const embed_dote1sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-scoundrel--60/third-times-the-charm--2905/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('A LA TERCERA VA LA VENCIDA [SUERTE]')
             .setDescription('Third Time’s the Charm')
             .addField('Libro', 'Complete Scoundrel')
@@ -89,12 +95,15 @@ bot.on('message', message=>{
             message.channel.send(embed_dote1sp);
             break;
         case 'third':
+            message.delete()
             if(args[1] !== 'the') message.channel.send('Esta dote no existe, escríbela bien!');
             if(args[1] !== 'the') return;
             let time = args[0];
             let the = args[1];
             let charm = args[2]
             const embed_dote1en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-scoundrel--60/third-times-the-charm--2905/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('A LA TERCERA VA LA VENCIDA [SUERTE]')
             .setDescription('Third Time’s the Charm')
             .addField('Libro', 'Complete Scoundrel')
@@ -106,9 +115,12 @@ bot.on('message', message=>{
             break;
 // ABALANZAMIENTO FELINO
         case 'abalanzamiento':
+            message.delete()
             if(args[0] !== 'felino') return message.channel.send('Esta dote no existe, escríbela bien!');
             let felino = args[0];
             const embed_dote2sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/races-of-the-wild--84/catfolk-pounce--293/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABALANZAMIENTO FELINO [GENERAL]')
             .setDescription('Catfolk Pounce')
             .addField('Libro', 'Races of The Wild')
@@ -120,9 +132,12 @@ bot.on('message', message=>{
             message.channel.send(embed_dote2sp);
             break;
         case 'catfolk':
+            message.delete()
             if(args[0] !== 'pounce') return message.channel.send('Esta dote no existe, escríbela bien!');
             let pounce = args[0];
             const embed_dote2en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/races-of-the-wild--84/catfolk-pounce--293/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABALANZAMIENTO FELINO [GENERAL]')
             .setDescription('Catfolk Pounce')
             .addField('Libro', 'Races of The Wild')
@@ -135,13 +150,16 @@ bot.on('message', message=>{
             break;
 // ABALANZARSE CON DOS ARMAS
         case 'abalanzarse':
+            message.delete()
             if(args[2] !== 'armas') return message.channel.send('Esta dote no existe, escríbela bien!');
             let con = args[0];
             let dos = args[1];
             let armas = args[2];
             const embed_dote3sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/players-handbook-ii--80/two-weapon-pounce--2999/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABALANZARSE CON DOS ARMAS [GENERAL, GUERRERO]')
-            .setDescription('Two Weapon\'s Pounce \n\n_Cuando cargues contra un adversario empuñando dos armas, podrás realizar dos ataques con suma rapidez. Sacrificarás el ímpetu e inercia de la carga a cambio de emplear tu arma secundaria._')
+            .setDescription('Two-Weapon\'s Pounce \n\n_Cuando cargues contra un adversario empuñando dos armas, podrás realizar dos ataques con suma rapidez. Sacrificarás el ímpetu e inercia de la carga a cambio de emplear tu arma secundaria._')
             .addField('Libro', 'Manual del jugador II')
             .addField('Prerrequisitos', 'Des 15, Combate con dos armas, ataque base +6')
             .addField('Beneficio', 'cuando realices una carga y empuñes un arma en cada mano, podrás atacar con ambas. Si eliges hacerlo, perderás el bonificador obtenido normalmente a las tiradas de ataque por realizar una carga, aunque seguirás sufriendo el penalizador -2 a tu CA. \n\nNormal: cuando se realiza una carga sólo se puede realizar un ataque al final del movimiento.')
@@ -151,9 +169,12 @@ bot.on('message', message=>{
             message.channel.send(embed_dote3sp);
             break;
         case 'two':
+            message.delete()
             if(args[1] !== 'pounce') return message.channel.send('Esta dote no existe, escríbela bien!');
             let weapon = args[0];
             const embed_dote3en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/players-handbook-ii--80/two-weapon-pounce--2999/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABALANZARSE CON DOS ARMAS [GENERAL, GUERRERO]')
             .setDescription('Two Weapon\'s Pounce \n\n_Cuando cargues contra un adversario empuñando dos armas, podrás realizar dos ataques con suma rapidez. Sacrificarás el ímpetu e inercia de la carga a cambio de emplear tu arma secundaria._')
             .addField('Libro', 'Manual del jugador II')
@@ -166,10 +187,13 @@ bot.on('message', message=>{
             break;
 // ABJURACIÓN DE ENERGÍA
         case 'abjuracion':
+            message.delete()
             if(args[1] !== 'energia') return message.channel.send('Esta dote no existe, escríbela bien!');
             let de = args[0];
             let energia = args[1];
             const embed_dote4sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-mage--58/energy-abjuration--870/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABJURACIÓN DE ENERGÍA [GENERAL]')
             .setDescription('Energy Abjuration \n\n_Lanzar un conjuro de abjuración de proporciona protección contra el daño por energía._')
             .addField('Libro', 'Complete Mage')
@@ -181,9 +205,12 @@ bot.on('message', message=>{
             message.channel.send(embed_dote4sp);
             break;
         case 'energy':
+            message.delete()
             if(args[0] !== 'abjuration') return message.channel.send('Esta dote no existe, escríbela bien!');
             let abjuration = args[0];
             const embed_dote4en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-mage--58/energy-abjuration--870/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABJURACIÓN DE ENERGÍA [GENERAL]')
             .setDescription('Energy Abjuration \n\n_Lanzar un conjuro de abjuración de proporciona protección contra el daño por energía._')
             .addField('Libro', 'Complete Mage')
@@ -196,9 +223,12 @@ bot.on('message', message=>{
             break;
 // ABRAZO DE LA TIERRA
         case 'abrazo':
+            message.delete()
             if(args[2] !== 'tierra') return message.channel.send('Esta dote no existe, escríbela bien!');
             let tierra = args[2];
             const embed_dote5sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-warrior--61/earths-embrace--801/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABRAZO DE LA TIERRA [GENERAL]')
             .setDescription('Earth\'s Embrace \n\n_Puedes aplastar a tus oponentes cuando les hagas una presa._')
             .addField('Libro', 'Combatiente Completo')
@@ -209,9 +239,12 @@ bot.on('message', message=>{
             message.channel.send(embed_dote5sp);
             break;
         case 'earth\'s':
+            message.delete()
             if(args[0] !== 'embrace') return message.channel.send('Esta dote no existe, escríbela bien!');
             let embrace = args[0];
             const embed_dote5en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-warrior--61/earths-embrace--801/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABRAZO DE LA TIERRA [GENERAL]')
             .setDescription('Earth\'s Embrace \n\n_Puedes aplastar a tus oponentes cuando les hagas una presa._')
             .addField('Libro', 'Combatiente Completo')
@@ -223,9 +256,12 @@ bot.on('message', message=>{
             break;    
 // ABSORBER VIDA PROFANO
         case 'absorber':
+            message.delete()
             if(args[1] !== 'profano') return message.channel.send('Esta dote no existe, escríbela bien!');
             let profano = args[1];
             const embed_dote6sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/libris-mortis-the-book-of-the-dead--71/profane-lifeleech--2247/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABSORBER VIDA PROFANO [DIVINA]')
             .setDescription('Profane Lifeleech \n\n_Puedes canalizar energía negativa para absorber la fuerza vital de las criaturas vivas que se hallen cerca._')
             .addField('Libro', 'Libris Mortis')
@@ -237,9 +273,12 @@ bot.on('message', message=>{
             message.channel.send(embed_dote6sp);
             break;
         case 'profane':
+            message.delete()
             if(args[0] !== 'lifeleech') return message.channel.send('Esta dote no existe, escríbela bien!');
             let lifeleech = args[0];
             const embed_dote6en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/libris-mortis-the-book-of-the-dead--71/profane-lifeleech--2247/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABSORBER VIDA PROFANO [DIVINA]')
             .setDescription('Profane Lifeleech \n\n_Puedes canalizar energía negativa para absorber la fuerza vital de las criaturas vivas que se hallen cerca._')
             .addField('Libro', 'Libris Mortis')
@@ -252,9 +291,12 @@ bot.on('message', message=>{
             break;
 // ABSTENCIÓN DE MATERIALES
         case 'abstencion':
+            message.delete()
             if(args[1] !== 'materiales') return message.channel.send('Esta dote no existe, escríbela bien!');
             let materiales = args[1];
             const embed_dote7sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/players-handbook-v35--6/eschew-materials--950/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABSTENCIÓN DE MATERIALES [GENERAL]')
             .setDescription('Eschew Materials \n\n_Puedes lanzar conjuros sin depender de componentes materiales._')
             .addField('Libro', 'Manual del Jugador')
@@ -265,9 +307,12 @@ bot.on('message', message=>{
             message.channel.send(embed_dote7sp);
             break;
         case 'eschew':
+            message.delete()
             if(args[0] !== 'materials') return message.channel.send('Esta dote no existe, escríbela bien!');
             let materials = args[0];
             const embed_dote7en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/players-handbook-v35--6/eschew-materials--950/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ABSTENCIÓN DE MATERIALES [GENERAL]')
             .setDescription('Eschew Materials \n\n_Puedes lanzar conjuros sin depender de componentes materiales._')
             .addField('Libro', 'Manual del Jugador')
@@ -278,10 +323,13 @@ bot.on('message', message=>{
             message.channel.send(embed_dote7en);
             break;
 // ACECHADOR ASCÉTICO
-        case 'acechador1':
+        case 'acechador':
+            message.delete()
             if(args[0] !== 'ascetico') return message.channel.send('Esta dote no existe, escríbela bien!');
             let ascetico = args[0];
             const embed_dote8sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-scoundrel--60/ascetic-stalker--130/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ACECHADOR ASCÉTICO [GENERAL]')
             .setDescription('Ascetic Stalker \n\n_Has practicado una técnica secreta que combina tu considerable talento en combate sin armas con una mayor comprensión de tu ki interior._')
             .addField('Libro', 'Complete Scoundrel')
@@ -293,9 +341,12 @@ bot.on('message', message=>{
             message.channel.send(embed_dote8sp);
             break;
         case 'ascetic':
-            if(args[0] !== 'ascetico') return message.channel.send('Esta dote no existe, escríbela bien!');
+            message.delete()
+            if(args[0] !== 'stalker') return message.channel.send('Esta dote no existe, escríbela bien!');
             let stalker = args[0];
             const embed_dote8en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-scoundrel--60/ascetic-stalker--130/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ACECHADOR ASCÉTICO [GENERAL]')
             .setDescription('Ascetic Stalker \n\n_Has practicado una técnica secreta que combina tu considerable talento en combate sin armas con una mayor comprensión de tu ki interior._')
             .addField('Libro', 'Complete Scoundrel')
@@ -307,10 +358,11 @@ bot.on('message', message=>{
             message.channel.send(embed_dote8en);
             break;
 // ACECHADOR DEL PANTANO
-        case 'acechador2':
-            if(args[1] !== 'pantano') return message.channel.send('Esta dote no existe, escríbela bien!');
-            let pantano = args[1];
+        case 'acechador_pantano':
+            message.delete()
             const embed_dote9sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/savage-species--47/swamp-stalker--2859/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ACECHADOR DEL PANTANO [GENERAL]')
             .setDescription('Swamp Stalker \n\n_Estás adaptado al entorno de los marjales_')
             .addField('Libro', 'Especies Salvajes')
@@ -321,8 +373,11 @@ bot.on('message', message=>{
             message.channel.send(embed_dote9sp);
             break;
         case 'swamp':
+            message.delete()
             if(args[0] !== 'stalker') return message.channel.send('Esta dote no existe, escríbela bien!');
             const embed_dote9en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/savage-species--47/swamp-stalker--2859/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ACECHADOR DEL PANTANO [GENERAL]')
             .setDescription('Swamp Stalker \n\n_Estás adaptado al entorno de los marjales_')
             .addField('Libro', 'Especies Salvajes')
@@ -333,10 +388,11 @@ bot.on('message', message=>{
             message.channel.send(embed_dote9en);
             break;
 // ACECHADOR MARCIAL
-        case 'acechador3':
-            if(args[0] !== 'marcial') return message.channel.send('Esta dote no existe, escríbela bien!');
-            let marcial = args[0];
+        case 'acechador_marcial':
+            message.delete()
             const embed_dote10sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-scoundrel--60/martial-stalker--1877/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ACECHADOR MARCIAL [GENERAL, GUERRERO]')
             .setDescription('Martial Stalker \n\n_Practicas un poderoso estilo de lucha que se centra tanto en la habilidad marcial como en la dedicación mística._')
             .addField('Libro', 'Complete Scoundrel')
@@ -347,8 +403,11 @@ bot.on('message', message=>{
             message.channel.send(embed_dote10sp);
             break;
         case 'martial':
+            message.delete()
             if(args[0] !== 'stalker') return message.channel.send('Esta dote no existe, escríbela bien!');
             const embed_dote10en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-scoundrel--60/martial-stalker--1877/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ACECHADOR MARCIAL [GENERAL, GUERRERO]')
             .setDescription('Martial Stalker \n\n_Practicas un poderoso estilo de lucha que se centra tanto en la habilidad marcial como en la dedicación mística._')
             .addField('Libro', 'Complete Scoundrel')
@@ -359,9 +418,12 @@ bot.on('message', message=>{
             message.channel.send(embed_dote10en);
             break;            
 // ACELERAR EXPULSIÓN
-        case 'acelerar1':
+        case 'acelerar':
+            message.delete()
             if(args[0] !== 'expulsion') return message.channel.send('Esta dote no existe, escríbela bien!');
             const embed_dote11sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-divine--56/quicken-turning--2339/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ACELERAR EXPULSIÓN [GENERAL]')
             .setDescription('Quicken Turning \n\n_Puedes expulsar o reprender muertos vivientes con un pensamiento repentino._')
             .addField('Libro', 'Divino Completo')
@@ -372,8 +434,11 @@ bot.on('message', message=>{
             message.channel.send(embed_dote11sp);
             break;
         case 'quicken':
+            message.delete()
             if(args[0] !== 'turning') return message.channel.send('Esta dote no existe, escríbela bien!');
             const embed_dote11en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/complete-divine--56/quicken-turning--2339/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ACELERAR EXPULSIÓN [GENERAL]')
             .setDescription('Quicken Turning \n\n_Puedes expulsar o reprender muertos vivientes con un pensamiento repentino._')
             .addField('Libro', 'Divino Completo')
@@ -384,9 +449,11 @@ bot.on('message', message=>{
             message.channel.send(embed_dote11en);
             break;
 // ACELERAR METAMAGIA
-        case 'acelerar2':
-            if(args[0] !== 'metamagia') return message.channel.send('Esta dote no existe, escríbela bien!');
+        case 'acelerar_metamagia':
+            message.delete()
             const embed_dote12sp = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/races-of-the-dragon--83/accelerate-metamagic--21/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ACELERAR METAMAGIA [GENERAL]')
             .setDescription('Accelerate Metamagic \n\n_Puedes aplicar una dote metamágica a tus conjuros más rápido de lo normal._')
             .addField('Libro', 'Races of Dragon')
@@ -398,8 +465,11 @@ bot.on('message', message=>{
             message.channel.send(embed_dote12sp);
             break;
         case 'accelerate':
+            message.delete()
             if(args[0] !== 'metamagic') return message.channel.send('Esta dote no existe, escríbela bien!');
             const embed_dote12en = new Discord.MessageEmbed()
+            .setURL('https://dndtools.net/feats/races-of-the-dragon--83/accelerate-metamagic--21/')
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('ACELERAR METAMAGIA [GENERAL]')
             .setDescription('Accelerate Metamagic \n\n_Puedes aplicar una dote metamágica a tus conjuros más rápido de lo normal._')
             .addField('Libro', 'Races of Dragon')
@@ -414,6 +484,7 @@ bot.on('message', message=>{
 
 ////////////////////////////////////////////
         case 'clases':
+            message.delete()
             const embed_clases = new Discord.MessageEmbed()
             .setTitle('Clases')
             .addField('Prueba', message.author.username, true)
@@ -424,6 +495,7 @@ bot.on('message', message=>{
             message.channel.send(embed_clases);
             break;
         case 'utilidad':
+            message.delete()
             const embed_utilidad = new Discord.MessageEmbed()
             .setTitle('Utilidades')
             .addField('Prueba', message.author.username, true)
@@ -434,6 +506,7 @@ bot.on('message', message=>{
             message.channel.send(embed_utilidad);
             break;
         case 'comandos':
+            message.delete()
             const embed_comandos = new Discord.MessageEmbed()
             .setTitle('Listado de comandos disponibles')
             .addField('?info', 'Obtén información del bot')
@@ -446,6 +519,7 @@ bot.on('message', message=>{
             message.channel.send(embed_comandos);
             break;
         case 'info':
+            message.delete()
             const embed_info = new Discord.MessageEmbed()
             .setTitle('__**D&D BOT**__')
             .setDescription('Este sistema, está diseñado y programado para facilitar la gestión de toda la información relevante a **D&D**. \n\nSi tienes cualquier duda, sugerencia o queja, puedes dirigirla al desarrollador del mismo que estará abajo reseñado o a cualquier miembro de la administración para que lo hagan llegar. \n\u200B')
