@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const Discord = require('dotes.js');
 const bot = new Discord.Client();
 
 const token = 'NzMzNDQ5OTg5MTExNjc2OTM4.XxDYRw.Hz_OM8W9gi6tG83fXCIQEkdeNdc';
