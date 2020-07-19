@@ -50,16 +50,13 @@ bot.on('message', message=>{
         case 'clases':
             message.delete()
             const embed_clases = new Discord.MessageEmbed()
-            .setTitle('Clases')
-            .addField('Prueba', message.author.username, true)
-            .addField('Versión', version, true)
-            .addField('Servidor', message.guild.name, true)
-            .setColor(0x00FFFB)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/ZCj7pgh.jpg')
             message.channel.send(embed_clases);
             break;
 ///////////////////////////////////////
-        case 'bárbaro':
+        case 'barbaro':
             message.delete()
             const embed_barbaro = new Discord.MessageEmbed()
             .setColor(0xeae3c6)
