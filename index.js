@@ -50,7 +50,7 @@ bot.on('message', message=>{
         case 'dotes':
             message.delete()
             const embed_dotes = new Discord.MessageEmbed()
-            .setColor(0x00FFFB)
+            .setColor(0xeae3c6)
             .setAuthor(message.author.username, message.author.avatarURL())
             .setImage('https://i.imgur.com/MknzgcT.jpg')
             message.channel.send(embed_dotes);
