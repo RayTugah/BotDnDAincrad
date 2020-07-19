@@ -65,6 +65,7 @@ bot.on('message', message=>{
             .setColor(0xeae3c6)
             .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
             .setURL('https://www.rolroyce.com/rol/DDP/Clases/Barbaro35.php')
             .setImage('https://i.imgur.com/GSYSAcG.jpg')
             message.channel.send(embed_barbaro);
