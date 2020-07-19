@@ -52,7 +52,7 @@ bot.on('message', message=>{
             const embed_dotes = new Discord.MessageEmbed()
             .setColor(0xeae3c6)
             .setAuthor(message.author.username, message.author.avatarURL())
-            .setImage('https://i.imgur.com/MknzgcT.jpg')
+            .setImage('https://i.imgur.com/UxWi3Z2.jpg')
             message.channel.send(embed_dotes);
             break;
 //////////////////////////////////////// 
