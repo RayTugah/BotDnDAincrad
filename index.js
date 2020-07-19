@@ -5,9 +5,9 @@ const token = 'NzMzNDQ5OTg5MTExNjc2OTM4.XxDYRw.Hz_OM8W9gi6tG83fXCIQEkdeNdc';
 
 const prefix = '?';
 
-var version = '__**v0.1.5**__';
+var version = '__**v0.1.6**__';
 
-var actualización = '_19-07-2020_';
+var actualización = '_20-07-2020_';
 
 bot.on('ready', () =>{
     console.log('Bot encendido!');
@@ -45,6 +45,29 @@ bot.on('message', message=>{
             .setColor(0x00FFFB)
             .setThumbnail('https://i.imgur.com/b3pizy4.png')
             message.channel.send(embed_hechizos);
+            break;
+//////////////// CLASES ///////////////
+        case 'clases':
+            message.delete()
+            const embed_clases = new Discord.MessageEmbed()
+            .setTitle('Clases')
+            .addField('Prueba', message.author.username, true)
+            .addField('Versión', version, true)
+            .addField('Servidor', message.guild.name, true)
+            .setColor(0x00FFFB)
+            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            message.channel.send(embed_clases);
+            break;
+///////////////////////////////////////
+        case 'bárbaro':
+            message.delete()
+            const embed_barbaro = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Barbaro35.php')
+            .setImage('https://i.imgur.com/GSYSAcG.jpg')
+            message.channel.send(embed_barbaro);
             break;
 //////////////// DOTES ////////////////
         case 'dotes':
@@ -466,17 +489,6 @@ bot.on('message', message=>{
 //
 
 ////////////////////////////////////////////
-        case 'clases':
-            message.delete()
-            const embed_clases = new Discord.MessageEmbed()
-            .setTitle('Clases')
-            .addField('Prueba', message.author.username, true)
-            .addField('Versión', version, true)
-            .addField('Servidor', message.guild.name, true)
-            .setColor(0x00FFFB)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
-            message.channel.send(embed_clases);
-            break;
         case 'utilidad':
             message.delete()
             const embed_utilidad = new Discord.MessageEmbed()
