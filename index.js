@@ -5,7 +5,7 @@ const token = 'NzMzNDQ5OTg5MTExNjc2OTM4.XxDYRw.Hz_OM8W9gi6tG83fXCIQEkdeNdc';
 
 const prefix = '?';
 
-var version = '__**v0.1.4**__';
+var version = '__**v0.1.5**__';
 
 var actualización = '_19-07-2020_';
 
@@ -51,6 +51,7 @@ bot.on('message', message=>{
             message.delete()
             const embed_dotes = new Discord.MessageEmbed()
             .setColor(0x00FFFB)
+            .setAuthor(message.author.username, message.author.avatarURL())
             .setImage('https://i.imgur.com/MknzgcT.jpg')
             message.channel.send(embed_dotes);
             break;
