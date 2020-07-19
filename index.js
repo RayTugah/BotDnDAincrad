@@ -64,7 +64,7 @@ bot.on('message', message=>{
             .setTitle('Source')
             .setDescription('Recomendable abrir la foto en tamaño original.')
             .setURL('https://www.rolroyce.com/rol/DDP/Clases/Barbaro35.php')
-            .setImage('https://i.imgur.com/GSYSAcG.jpg')
+            .setImage('https://i.imgur.com/dxANxeV.jpg')
             message.channel.send(embed_barbaro);
             break;
 //////////////// DOTES ////////////////
@@ -505,7 +505,7 @@ bot.on('message', message=>{
             .addField('?info', 'Obtén información del bot')
             .addField('?hechizos', 'Obtén la lista de hechizos de D&D 3.5e')
             .addField('?dotes', 'Obtén la lista de dotes de D&D 3.5e')
-            .addField('?clases', 'Obtén la lista de clases de D&D 3.5e')
+            .addField('?clases', 'Obtén la lista de clases **OFICIALES** de D&D 3.5e')
             .addField('?utilidad', 'Obtén la lista de todos los demás comandos disponibles para utilidades de D&D 3.5e')
             .setColor(0xFFB600)
             .setThumbnail('https://i.imgur.com/b3pizy4.png')
