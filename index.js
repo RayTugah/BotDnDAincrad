@@ -64,7 +64,7 @@ bot.on('message', message=>{
             .setTitle('Source')
             .setDescription('Recomendable abrir la foto en tamaño original.')
             .setURL('https://www.rolroyce.com/rol/DDP/Clases/Barbaro35.php')
-            .setImage('https://i.imgur.com/dxANxeV.jpg')
+            .setImage('https://i.imgur.com/cQuaiuY.jpg')
             message.channel.send(embed_barbaro);
             break;
 //////////////// DOTES ////////////////
