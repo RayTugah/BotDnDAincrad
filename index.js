@@ -49,15 +49,11 @@ bot.on('message', message=>{
 //////////////// DOTES ////////////////
         case 'dotes':
             message.delete()
-            const embed_dotes1 = new Discord.MessageEmbed()
+            const embed_dotes = new Discord.MessageEmbed()
             .setColor(0x00FFFB)
             .setAuthor(message.author.username, message.author.avatarURL())
-            .setImage('https://i.imgur.com/1fNDMEx.jpg')
-            const embed_dotes2 = new Discord.MessageEmbed()
-            .setColor(0x00FFFB)
-            .setImage('https://i.imgur.com/JRuWqMm.jpg')
-            message.channel.send(embed_dotes1);
-            message.channel.send(embed_dotes2);
+            .setImage('https://i.imgur.com/MknzgcT.jpg')
+            message.channel.send(embed_dotes);
             break;
 //////////////////////////////////////// 
 // A LA TERCERA VA LA VENCIDA
