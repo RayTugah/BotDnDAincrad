@@ -46,6 +46,7 @@ bot.on('message', message=>{
             .setColor(0x00FFFB)
             .setThumbnail('https://i.imgur.com/b3pizy4.png')
             message.channel.send(embed_comunicado);
+            message.channel.send("@everyone ");
             break;
 //////////////////////////////////////// 
         case 'aaaaa':
