@@ -35,6 +35,18 @@ bot.on('message', message=>{
             .setThumbnail('https://i.imgur.com/b3pizy4.png')
             message.channel.send(embed_hechizo1sp);
             break;
+        case 'comunicado':
+            const embed_comunicado = new Discord.MessageEmbed()
+            .setTitle('Comunicado Importante')
+            .setDescription('Separaremos el comunicado en 3 partes:')
+            .addField('D&D Bot', '<@287929373967908865> está creando un bot que actúa como **base de datos** de D&D3.5, en el cual se incluyen tanto clases, como dotes, como hechizos. Cualquier sugerencia o ayuda está tremendamente aceptada y agradecida!')
+            .addField('d20', 'Creado un nuevo rol llamado **d20**, este rol te dará acceso tanto al bot de d&d, como a las salas de los libros de D&D5e y 3.5e, además de a una sala de conversación de rol y a salas de busqueda de partidas y anuncios de nuevas partidas que están por venir')
+            .addField('\u200B', '\u200B')
+            .addField('¿Cómo acceder al rol y al bot?', 'deberás entrar a la sala <@683314561004339280> y hacer click en la reacción del dado rojo. Automáticamente podrás ver todas las salas en cuestión.')
+            .setColor(0x00FFFB)
+            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            message.channel.send(embed_comunicado);
+            break;
 //////////////////////////////////////// 
         case 'aaaaa':
             const embed_hechizos = new Discord.MessageEmbed()
