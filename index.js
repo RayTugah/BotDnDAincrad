@@ -5,9 +5,9 @@ const token = 'NzMzNDQ5OTg5MTExNjc2OTM4.XxDYRw.Hz_OM8W9gi6tG83fXCIQEkdeNdc';
 
 const prefix = '?';
 
-var version = '__**v0.1.6**__';
+var version = '__**v0.1.7**__';
 
-var actualización = '_20-07-2020_';
+var actualización = '_30-07-2020_';
 
 bot.on('ready', () =>{
     console.log('Bot encendido!');
@@ -69,6 +69,28 @@ bot.on('message', message=>{
             message.channel.send(embed_clases);
             break;
 ///////////////////////////////////////
+        case 'alma_predilecta':
+            message.delete()
+            const embed_alma = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/AlmaPredilecta35.php')
+            .setImage('https://i.imgur.com/sasBPSj.png')
+            message.channel.send(embed_alma);
+            break;
+        case 'archivista':
+            message.delete()
+            const embed_archivista = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rincondeldm.com/wiki/dungeons-dragons/35/clases/archivista')
+            .setImage('https://i.imgur.com/o7sf3jJ.jpg')
+            message.channel.send(embed_archivista);
+            break;
         case 'barbaro':
             message.delete()
             const embed_barbaro = new Discord.MessageEmbed()
@@ -79,6 +101,20 @@ bot.on('message', message=>{
             .setURL('https://www.rolroyce.com/rol/DDP/Clases/Barbaro35.php')
             .setImage('https://i.imgur.com/cQuaiuY.jpg')
             message.channel.send(embed_barbaro);
+            break;
+        case 'bardo':
+            message.delete()
+            const embed_bardo1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Barbaro35.php')
+            .setImage('https://i.imgur.com/uV9I6FZ.jpg')
+            message.channel.send(embed_bardo1);
+            const embed_bardo2 = new Discord.MessageEmbed()
+            .setImage('https://i.imgur.com/6mBmLmd.png')
+            message.channel.send(embed_bardo2);
             break;
 //////////////// DOTES ////////////////
         case 'dotes':
