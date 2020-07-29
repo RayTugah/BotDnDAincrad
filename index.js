@@ -109,12 +109,95 @@ bot.on('message', message=>{
             .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('Source')
             .setDescription('Recomendable abrir la foto en tamaño original.')
-            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Barbaro35.php')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Bardo35.php')
             .setImage('https://i.imgur.com/uV9I6FZ.jpg')
             message.channel.send(embed_bardo1);
             const embed_bardo2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
             .setImage('https://i.imgur.com/6mBmLmd.png')
             message.channel.send(embed_bardo2);
+            break;
+        case 'batidor':
+            message.delete()
+            const embed_batidor = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Batidor35.php')
+            .setImage('https://i.imgur.com/J4XACFc.png')
+            message.channel.send(embed_batidor);
+            break;
+        case 'brujo_arcano':
+            message.delete()
+            const embed_brujoarcano1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/BrujoArcano35.php')
+            .setImage('https://i.imgur.com/nUutLLr.jpg')
+            message.channel.send(embed_brujoarcano1);
+            const embed_brujoarcano2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/llwtwTd.png')
+            message.channel.send(embed_brujoarcano2);
+            break;
+        case 'caballero':
+            message.delete()
+            const embed_caballero1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Caballero35.php')
+            .setImage('https://i.imgur.com/4GLBIeu.jpg')
+            message.channel.send(embed_caballero1);
+            const embed_caballero2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/OcKVzxI.png')
+            message.channel.send(embed_caballero2);
+            break;
+        case 'chaman_dragon':
+            message.delete()
+            const embed_chamandragon1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/ChamanDragon35.php')
+            .setImage('https://i.imgur.com/JtY3bYj.jpg')
+            message.channel.send(embed_chamandragon1);
+            const embed_chamandragon2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/16hNhPJ.png')
+            message.channel.send(embed_chamandragon2);
+            break;
+        case 'chaman_espiritual':
+            message.delete()
+            const embed_chamanespiritual1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/ChamanEspiritual35.php')
+            .setImage('https://i.imgur.com/vDC49bm.png')
+            message.channel.send(embed_chamanespiritual1);
+            const embed_chamanespiritual2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/MaCkP2o.jpg')
+            message.channel.send(embed_chamanespiritual2);
+            break;
+        case 'clerigo':
+            message.delete()
+            const embed_clerigo = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Clerigo35.php')
+            .setImage('https://i.imgur.com/Yil6cr5.jpg')
+            message.channel.send(embed_clerigo);
             break;
 //////////////// DOTES ////////////////
         case 'dotes':
