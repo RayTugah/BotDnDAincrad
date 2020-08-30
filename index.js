@@ -5,9 +5,9 @@ const token = 'NzMzNDQ5OTg5MTExNjc2OTM4.XxDUiA.EDUn5-Av3HOu1beqPJL7Ks-1rOA';
 
 const prefix = '?';
 
-var version = '__**v0.1.7**__';
+var version = '__**v0.1.8**__';
 
-var actualización = '_30-07-2020_';
+var actualización = '_31-08-2020_';
 
 bot.on('ready', () =>{
     console.log('Bot encendido!');
@@ -198,6 +198,73 @@ bot.on('message', message=>{
             .setURL('https://www.rolroyce.com/rol/DDP/Clases/Clerigo35.php')
             .setImage('https://i.imgur.com/Yil6cr5.jpg')
             message.channel.send(embed_clerigo);
+            break;
+        case 'cruzado':
+            message.delete()
+            const embed_cruzado = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rincondeldm.com/wiki/dungeons-dragons/35/clases/cruzado')
+            .setImage('https://i.imgur.com/Gu5qFAe.jpg')
+            message.channel.send(embed_cruzado);
+            const embed_cruzado2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/dwABKCw.png')
+            message.channel.send(embed_cruzado2);
+            break;
+        case 'cuchillo_alma':
+            message.delete()
+            const embed_cuchilloalma1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rincondeldm.com/wiki/dungeons-dragons/35/clases/cuchillo-del-alma')
+            .setImage('https://i.imgur.com/pcFd8XM.jpg')
+            message.channel.send(embed_cuchilloalma1);
+            const embed_cuchilloalma2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/SOoQMDn.png')
+            message.channel.send(embed_cuchilloalma2);
+            break;
+        case 'druida':
+            message.delete()
+            const embed_druida = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Druida35.php')
+            .setImage('https://i.imgur.com/3m1efKb.jpg')
+            message.channel.send(embed_druida);
+            const embed_druida2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/LG7LF1c.jpg')
+            message.channel.send(embed_druida2);
+            break;
+        case 'embaucador':
+            message.delete()
+            const embed_embaucador = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Embaucador35.php')
+            .setImage('https://i.imgur.com/RN3VVps.jpg')
+            message.channel.send(embed_embaucador);
+            break;
+        case 'espadachin':
+            message.delete()
+            const embed_espadachin = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Espadachin35.php')
+            .setImage('https://i.imgur.com/xjo9HZ1.png')
+            message.channel.send(embed_espadachin);
             break;
 //////////////// DOTES ////////////////
         case 'dotes':
