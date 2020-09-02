@@ -7,7 +7,7 @@ const prefix = '?';
 
 var version = '__**v0.1.8**__';
 
-var actualización = '_31-08-2020_';
+var actualización = '_03-09-2020_';
 
 bot.on('ready', () =>{
     console.log('Bot encendido!');
@@ -265,6 +265,65 @@ bot.on('message', message=>{
             .setURL('https://www.rolroyce.com/rol/DDP/Clases/Espadachin35.php')
             .setImage('https://i.imgur.com/xjo9HZ1.png')
             message.channel.send(embed_espadachin);
+            break;
+        case 'explorador':
+            message.delete()
+            const embed_explorador1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Explorador35.php')
+            .setImage('https://i.imgur.com/t89RSSh.png')
+            message.channel.send(embed_explorador1);
+            const embed_explorador2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/IoXtCf1.png')
+            message.channel.send(embed_explorador2);
+            break;
+        case 'filo_aojador':
+            message.delete()
+            const embed_filoaojador = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DnD3/Clases/FiloAojador.htm')
+            .setImage('https://i.imgur.com/nuUHbwA.jpg')
+            message.channel.send(embed_filoaojador);
+            break;
+        case 'filo_ocaso':
+            message.delete()
+            const embed_filoocaso = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/FiloOcaso35.php')
+            .setImage('https://i.imgur.com/io1H3iw.jpg')
+            message.channel.send(embed_filoocaso);
+            break;
+        case 'guerrero':
+            message.delete()
+            const embed_guerrero = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Guerrero35.php')
+            .setImage('https://i.imgur.com/tJZslgz.png')
+            message.channel.send(embed_guerrero);
+            break;
+        case 'guerrero_psi':
+            message.delete()
+            const embed_guerreropsiquico = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rincondeldm.com/wiki/dungeons-dragons/35/clases/guerrero-psiquico')
+            .setImage('https://i.imgur.com/hHOk4QH.jpg')
+            message.channel.send(embed_guerreropsiquico);
             break;
 //////////////// DOTES ////////////////
         case 'dotes':
