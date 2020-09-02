@@ -787,7 +787,7 @@ bot.on('message', message=>{
             break;
         
         default:
-            message.channel.send('Este comando no existe!');
+            message.channel.send('Este comando no existe, haz el favor y pon "?comandos"!');
             break;
 
     }
