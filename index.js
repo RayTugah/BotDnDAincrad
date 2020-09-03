@@ -820,6 +820,7 @@ bot.on('message', message=>{
             const embed_comandos = new Discord.MessageEmbed()
             .setTitle('Listado de comandos disponibles')
             .addField('?info', 'Obtén información del bot')
+            .addField('?registro', 'Obtén la lista de todas las últimas actualizaciones y cambios en el bot.')
             .addField('?hechizos', 'Obtén la lista de hechizos de D&D 3.5e')
             .addField('?dotes', 'Obtén la lista de dotes de D&D 3.5e')
             .addField('?clases', 'Obtén la lista de clases **OFICIALES** de D&D 3.5e')
@@ -840,6 +841,14 @@ bot.on('message', message=>{
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_info);
             break;
+        case 'registro':
+            message.delete()
+            const embed_registro = new Discord.MessageEmbed()
+            .setTitle('__**REGISTRO DE CAMBIOS**__')
+            .addField(version, '\n\u200B-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n-Creación del comando "?registro" para el historial de actualizaciones.', false)
+            .setColor(0xFFF300)
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
+            message.channel.send(embed_registro);
         case 'clear':
             if(!args[0]) return message.reply('Por favor especifica el número')
             message.channel.bulkDelete(args[0]);
