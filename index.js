@@ -5,7 +5,7 @@ const token = 'NzMzNDQ5OTg5MTExNjc2OTM4.XxDUiA.EDUn5-Av3HOu1beqPJL7Ks-1rOA';
 
 const prefix = '?';
 
-var version = '__**v0.1.8**__';
+var version = '__**v0.1.9**__';
 
 var actualización = '_03-09-2020_';
 
@@ -324,6 +324,65 @@ bot.on('message', message=>{
             .setURL('https://www.rincondeldm.com/wiki/dungeons-dragons/35/clases/guerrero-psiquico')
             .setImage('https://i.imgur.com/hHOk4QH.jpg')
             message.channel.send(embed_guerreropsiquico);
+            break;
+        case 'hechicero':
+            message.delete()
+            const embed_hechicero = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Hechicero35.php')
+            .setImage('https://i.imgur.com/FbRGm5O.png')
+            message.channel.send(embed_hechicero);
+            break;
+        case 'indomito':
+            message.delete()
+            const embed_indomito = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rincondeldm.com/wiki/dungeons-dragons/35/clases/indomito')
+            .setImage('https://i.imgur.com/N0KH23i.jpg')
+            message.channel.send(embed_indomito);
+            break;
+       case 'magico_guerra':
+            message.delete()
+            const embed_magicodeguerra = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/MagicoGuerra.php')
+            .setImage('https://i.imgur.com/Xk8MAMf.png')
+            message.channel.send(embed_magicodeguerra);
+            break;
+      case 'mago':
+            message.delete()
+            const embed_mago = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Mago30.php')
+            .setImage('https://i.imgur.com/ciNSUMA.png')
+            message.channel.send(embed_mago);
+            break;
+        case 'monje':
+            message.delete()
+            const embed_monje1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Monje30.php')
+            .setImage('https://i.imgur.com/4lLYlbr.jpg')
+            message.channel.send(embed_monje1);
+            const embed_monje2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/L3HDl6o.jpg')
+            message.channel.send(embed_monje2);
             break;
 //////////////// DOTES ////////////////
         case 'dotes':
