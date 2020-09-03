@@ -5,7 +5,7 @@ const token = 'NzMzNDQ5OTg5MTExNjc2OTM4.XxDUiA.EDUn5-Av3HOu1beqPJL7Ks-1rOA';
 
 const prefix = '?';
 
-var version = '__**v0.1.9**__';
+var version = '**v0.1.9**';
 
 var actualización = '_03-09-2020_';
 
@@ -845,7 +845,7 @@ bot.on('message', message=>{
             message.delete()
             const embed_registro = new Discord.MessageEmbed()
             .setTitle('__**REGISTRO DE CAMBIOS**__')
-            .addField(version, '\n\u200B-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n-Ahora cuándo escribes un comando inexistente, el mensaje te dirá que uses "?comandos"\n-Creación del comando "?registro" para el historial de actualizaciones.', false)
+            .addField(version + '\n\u200B', '-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n\n-Ahora cuándo escribes un comando inexistente, el mensaje te dirá que uses "?comandos"\n\n-Creación del comando "?registro" para el historial de actualizaciones.', false)
             .setColor(0xFFF300)
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_registro);
