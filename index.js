@@ -850,7 +850,7 @@ bot.on('message', message=>{
             .setTitle('__**REGISTRO DE CAMBIOS**__')
             .setAuthor(message.author.username, message.author.avatarURL())
             .addField(version, '-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n\n-Ahora cuándo escribes un comando inexistente, el mensaje te dirá que uses "?comandos"\n\n-Creación del comando "?registro" para el historial de actualizaciones.', false)
-            .setColor(0xFFF300)
+            .setColor(0xb1e7d4)
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_registro);
             break;
