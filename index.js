@@ -849,6 +849,7 @@ bot.on('message', message=>{
             .setColor(0xFFF300)
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_registro);
+            break;
         case 'clear':
             if(!args[0]) return message.reply('Por favor especifica el número')
             message.channel.bulkDelete(args[0]);
