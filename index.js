@@ -812,7 +812,7 @@ bot.on('message', message=>{
             .addField('Versión', version, true)
             .addField('Servidor', message.guild.name, true)
             .setColor(0x00FFFB)
-            .setThumbnail('https://i.imgur.com/xZKVvhA.png')
+            .setThumbnail('https://i.imgur.com/4XAh7YW.mp4')
             message.channel.send(embed_utilidad);
             break;
         case 'comandos':
@@ -825,7 +825,7 @@ bot.on('message', message=>{
             .addField('?clases', 'Obtén la lista de clases **OFICIALES** de D&D 3.5e')
             .addField('?utilidad', 'Obtén la lista de todos los demás comandos disponibles para utilidades de D&D 3.5e')
             .setColor(0xFFB600)
-            .setThumbnail('https://i.imgur.com/xZKVvhA.png')
+            .setThumbnail('https://i.imgur.com/4XAh7YW.mp4')
             message.channel.send(embed_comandos);
             break;
         case 'info':
@@ -837,7 +837,7 @@ bot.on('message', message=>{
             .addField('Versión', version + ' _(beta)_', true)
             .addField('Ult.Actualización', actualización, true)
             .setColor(0xFFF300)
-            .setThumbnail('https://i.imgur.com/xZKVvhA.png')
+            .setThumbnail('https://i.imgur.com/4XAh7YW.mp4')
             message.channel.send(embed_info);
             break;
         case 'clear':
