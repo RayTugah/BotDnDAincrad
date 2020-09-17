@@ -65,7 +65,7 @@ bot.on('message', message=>{
             const embed_clases = new Discord.MessageEmbed()
             .setAuthor(message.author.username, message.author.avatarURL())
             .setColor(0xeae3c6)
-            .setImage('https://i.imgur.com/ZCj7pgh.jpg')
+            .setImage('https://i.imgur.com/KZarKPR.jpg')
             message.channel.send(embed_clases);
             break;
 ///////////////////////////////////////
