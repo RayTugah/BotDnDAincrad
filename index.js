@@ -5,9 +5,9 @@ const token = 'NzMzNDQ5OTg5MTExNjc2OTM4.XxDUiA.EDUn5-Av3HOu1beqPJL7Ks-1rOA';
 
 const prefix = '?';
 
-var version = '**v0.1.9**';
+var version = '**v0.2.0**';
 
-var actualización = '_03-09-2020_';
+var actualización = '_27-09-2020_';
 
 bot.on('ready', () =>{
     console.log('Bot encendido!');
@@ -255,6 +255,16 @@ bot.on('message', message=>{
             .setImage('https://i.imgur.com/RN3VVps.jpg')
             message.channel.send(embed_embaucador);
             break;
+        case 'erudito':
+            message.delete()
+            const embed_erudito = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setImage('https://i.imgur.com/lgd1UK4.jpg')
+            message.channel.send(embed_erudito);
+            break;
         case 'espadachin':
             message.delete()
             const embed_espadachin = new Discord.MessageEmbed()
@@ -347,7 +357,7 @@ bot.on('message', message=>{
             .setImage('https://i.imgur.com/N0KH23i.jpg')
             message.channel.send(embed_indomito);
             break;
-       case 'magico_guerra':
+        case 'magico_guerra':
             message.delete()
             const embed_magicodeguerra = new Discord.MessageEmbed()
             .setColor(0xeae3c6)
@@ -358,7 +368,7 @@ bot.on('message', message=>{
             .setImage('https://i.imgur.com/Xk8MAMf.png')
             message.channel.send(embed_magicodeguerra);
             break;
-      case 'mago':
+        case 'mago':
             message.delete()
             const embed_mago = new Discord.MessageEmbed()
             .setColor(0xeae3c6)
@@ -383,6 +393,140 @@ bot.on('message', message=>{
             .setColor(0xeae3c6)
             .setImage('https://i.imgur.com/L3HDl6o.jpg')
             message.channel.send(embed_monje2);
+            break;
+        case 'ninja':
+            message.delete()
+            const embed_ninja1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Ninja.php')
+            .setImage('https://i.imgur.com/T8ysceU.jpg')
+            message.channel.send(embed_ninja1);
+            const embed_ninja2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/TFOBQ6t.png')
+            message.channel.send(embed_ninja2);
+            break;
+        case 'oficial':
+            message.delete()
+            const embed_oficial = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rincondeldm.com/wiki/dungeons-dragons/35/clases/oficial')
+            .setImage('https://i.imgur.com/CASpdwb.jpg')
+            message.channel.send(embed_oficial);
+            break;
+        case 'paladin':
+            message.delete()
+            const embed_paladin1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Paladin35.php')
+            .setImage('https://i.imgur.com/1hsiV77.jpg')
+            message.channel.send(embed_paladin1);
+            const embed_paladin2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/dL83VhX.png')
+            message.channel.send(embed_paladin2);
+            break;
+        case 'picaro':
+            message.delete()
+            const embed_picaro1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Picaro35.php')
+            .setImage('https://i.imgur.com/OI4EuMS.jpg')
+            message.channel.send(embed_picaro1);
+            const embed_picaro2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/2cpCFWw.png')
+            message.channel.send(embed_picaro2);
+            break;
+        case 'psionico':
+            message.delete()
+            const embed_psionico1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Psionico30.php')
+            .setImage('https://i.imgur.com/YVRlJup.jpg')
+            message.channel.send(embed_psionico1);
+            const embed_psionico2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/bibhJEM.png')
+            message.channel.send(embed_psionico2);
+            break;
+        case 'robaconjuros':
+            message.delete()
+            const embed_robaconjuros1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/Robaconjuros35.php')
+            .setImage('https://i.imgur.com/Y89vaI9.jpg')
+            message.channel.send(embed_robaconjuros1);
+            const embed_robaconjuros2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/1wCJ2Bg.png')
+            message.channel.send(embed_robaconjuros2);
+            break;
+        case 'samurai':
+            message.delete()
+            const embed_samurai = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rincondeldm.com/wiki/dungeons-dragons/35/clases/samurai')
+            .setImage('https://i.imgur.com/cABhopd.jpg')
+            message.channel.send(embed_samurai);
+            break;
+        case 'sanador':
+            message.delete()
+            const embed_sanador1 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rincondeldm.com/wiki/dungeons-dragons/35/clases/sanador')
+            .setImage('https://i.imgur.com/NeDUIJu.jpg')
+            message.channel.send(embed_sanador1);
+            const embed_sanador2 = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setImage('https://i.imgur.com/Vk8RjPJ.png')
+            message.channel.send(embed_sanador2);
+            break;
+        case 'shugenja':
+            message.delete()
+            const embed_shugenja = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rincondeldm.com/wiki/dungeons-dragons/35/clases/shugenja')
+            .setImage('https://i.imgur.com/bQVhHcX.jpg')
+            message.channel.send(embed_shugenja);
+            break;
+        case 'wu_jen':
+            message.delete()
+            const embed_wujen = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Source')
+            .setDescription('Recomendable abrir la foto en tamaño original.')
+            .setURL('https://www.rolroyce.com/rol/DDP/Clases/WuJen35.php')
+            .setImage('https://i.imgur.com/7cNnQhD.png')
+            message.channel.send(embed_wujen);
             break;
 //////////////// DOTES ////////////////
         case 'dotes':
@@ -849,7 +993,8 @@ bot.on('message', message=>{
             const embed_registro = new Discord.MessageEmbed()
             .setTitle('__**REGISTRO DE CAMBIOS**__')
             .setAuthor(message.author.username, message.author.avatarURL())
-            .addField(version, '-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n\n-Ahora cuándo escribes un comando inexistente, el mensaje te dirá que uses "?comandos"\n\n-Creación del comando "?registro" para el historial de actualizaciones.', false)
+            .addField('**v0.1.9**', '-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n\n-Ahora cuándo escribes un comando inexistente, el mensaje te dirá que uses "?comandos"\n\n-Creación del comando "?registro" para el historial de actualizaciones.', false)
+            .addField(version, '-Añadidas 11 nuevas clases (Erudito de la Espada, Ninja, Oficial, Paladín, Psiónico, Pícaro, Robaconjuros, Samurai, Sanador, Shugenja y Wu Jen) \n\n-Añadida la clase Erudito de la Espada a la imagen de clases, ya que no existía anteriormente.', false)
             .setColor(0xb1e7d4)
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_registro);
