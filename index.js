@@ -993,8 +993,8 @@ bot.on('message', message=>{
             const embed_registro = new Discord.MessageEmbed()
             .setTitle('__**REGISTRO DE CAMBIOS**__')
             .setAuthor(message.author.username, message.author.avatarURL())
-            .addField('**v0.1.9**', '-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n\n-Ahora cuándo escribes un comando inexistente, el mensaje te dirá que uses "?comandos"\n\n-Creación del comando "?registro" para el historial de actualizaciones.', false)
             .addField(version, '-Añadidas 11 nuevas clases (Erudito de la Espada, Ninja, Oficial, Paladín, Psiónico, Pícaro, Robaconjuros, Samurai, Sanador, Shugenja y Wu Jen) \n\n-Añadida la clase Erudito de la Espada a la imagen de clases, ya que no existía anteriormente.', false)
+            .addField('**v0.1.9**', '-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n\n-Ahora cuándo escribes un comando inexistente, el mensaje te dirá que uses "?comandos"\n\n-Creación del comando "?registro" para el historial de actualizaciones.', false)
             .setColor(0xb1e7d4)
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_registro);
