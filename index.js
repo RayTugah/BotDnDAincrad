@@ -966,7 +966,7 @@ bot.on('message', message=>{
             .setTitle('Listado de comandos disponibles')
             .setAuthor(message.author.username, message.author.avatarURL())
             .addField('?info', 'Obtén información del bot')
-            .addField('?registro', 'Obtén la lista de todas las últimas actualizaciones y cambios en el bot.')
+            .addField('?patchnotes', 'Obtén la lista de todas las últimas actualizaciones y cambios en el bot.')
             .addField('?hechizos', 'Obtén la lista de hechizos de D&D 3.5e')
             .addField('?dotes', 'Obtén la lista de dotes de D&D 3.5e')
             .addField('?clases', 'Obtén la lista de clases **OFICIALES** de D&D 3.5e')
@@ -988,16 +988,16 @@ bot.on('message', message=>{
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_info);
             break;
-        case 'registro':
+        case 'patchnotes':
             message.delete()
-            const embed_registro = new Discord.MessageEmbed()
+            const embed_patchnotes = new Discord.MessageEmbed()
             .setTitle('__**REGISTRO DE CAMBIOS**__')
             .setAuthor(message.author.username, message.author.avatarURL())
             .addField(version, '-Añadidas 11 nuevas clases (Erudito de la Espada, Ninja, Oficial, Paladín, Psiónico, Pícaro, Robaconjuros, Samurai, Sanador, Shugenja y Wu Jen) \n\n-Añadida la clase Erudito de la Espada a la imagen de clases, ya que no existía anteriormente.', false)
-            .addField('**v0.1.9**', '-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n\n-Ahora cuándo escribes un comando inexistente, el mensaje te dirá que uses "?comandos"\n\n-Creación del comando "?registro" para el historial de actualizaciones.', false)
+            .addField('**v0.1.9**', '-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n\n-Ahora cuándo escribes un comando inexistente, el mensaje te dirá que uses "?comandos"\n\n-Creación del comando "?patchnotes" para el historial de actualizaciones.', false)
             .setColor(0xb1e7d4)
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
-            message.channel.send(embed_registro);
+            message.channel.send(embed_patchnotes);
             break;
         case 'clear':
             if(!args[0]) return message.reply('Por favor especifica el número')
