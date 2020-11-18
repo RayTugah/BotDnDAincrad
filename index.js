@@ -999,11 +999,19 @@ bot.on('message', message=>{
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_patchnotes);
             break;
+        case 'tierlist':
+            message.delete()
+            const embed_tierlist = new Discord.MessageEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setColor(0xb1e7d4)
+            .setImage('https://cdn.discordapp.com/attachments/631580614126206987/733388498022826045/unknown.png')
+            message.channel.send(embed_tierlist);
+            break;
         case 'clear':
             if(!args[0]) return message.reply('Por favor especifica el número')
             message.channel.bulkDelete(args[0]);
             break;
-        
+    
         default:
             message.channel.send('Este comando no existe, haz el favor y pon "?comandos"!');
             break;
