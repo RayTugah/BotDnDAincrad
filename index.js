@@ -1004,7 +1004,7 @@ bot.on('message', message=>{
             const embed_tierlist = new Discord.MessageEmbed()
             .setAuthor(message.author.username, message.author.avatarURL())
             .setColor(0xb1e7d4)
-            .setImage('https://cdn.discordapp.com/attachments/631580614126206987/733388498022826045/unknown.png')
+            .setImage('https://cdn.discordapp.com/attachments/733494577175986246/778683906476081172/unknown.png')
             message.channel.send(embed_tierlist);
             break;
         case 'clear':
