@@ -1003,6 +1003,7 @@ bot.on('message', message=>{
             message.delete()
             const embed_tierlist = new Discord.MessageEmbed()
             .setAuthor(message.author.username, message.author.avatarURL())
+            .setDescription('Recomendable abrir la foto en tamaño original.')
             .setColor(0xb1e7d4)
             .setImage('https://cdn.discordapp.com/attachments/733494577175986246/778683906476081172/unknown.png')
             message.channel.send(embed_tierlist);
