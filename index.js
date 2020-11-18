@@ -971,7 +971,7 @@ bot.on('message', message=>{
             .addField('?dotes', 'Obtén la lista de dotes de D&D 3.5e')
             .addField('?clases', 'Obtén la lista de clases **OFICIALES** de D&D 3.5e')
             .addField('?utilidad', 'Obtén la lista de todos los demás comandos disponibles para utilidades de D&D 3.5e')
-            .addField('?tierlist', 'Obtendrás la sabiduría del dios <@237702747183382530> sobre cuales son los mejores personajes de D&D 3.5')
+            .addField('?tierlist', 'Obtendrás la sabiduría del dios <@237702747183382530> sobre cuales son las mejores clases de D&D 3.5')
             .setColor(0xFFB600)
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_comandos);
