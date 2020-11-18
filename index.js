@@ -1005,7 +1005,7 @@ bot.on('message', message=>{
             .setAuthor(message.author.username, message.author.avatarURL())
             .setDescription('Recomendable abrir la foto en tamaño original.')
             .setColor(0xb1e7d4)
-            .setImage('https://cdn.discordapp.com/attachments/733494577175986246/778683906476081172/unknown.png')
+            .setImage('https://i.imgur.com/yn7kKV8.png')
             message.channel.send(embed_tierlist);
             break;
         case 'clear':
