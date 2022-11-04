@@ -537,7 +537,7 @@ bot.on('message', message=>{
             .setImage('https://i.imgur.com/UxWi3Z2.jpg')
             message.channel.send(embed_dotes);
             break;
-        case 'MJD':
+        case 'mjd':
             message.delete()
             const embed_mjd = new Discord.MessageEmbed()
             .setColor(0xeae3c6)
