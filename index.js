@@ -1020,7 +1020,9 @@ bot.on('message', message=>{
             break;
         case 'clear':
             if(!args[0]) return message.reply('Por favor especifica el número')
-            message.channel.bulkDelete(args[0]);
+            message.channel.bulkDelete(args[0]).then(() => {
+                message.channel.send(args[0] + ' ' +"mensajes borrados.").then(msg => msg.delete(3000));
+              });
             break;
     
         default:
