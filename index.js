@@ -5,7 +5,7 @@ const token = 'NzMzNDQ5OTg5MTExNjc2OTM4.XxDUiA.EDUn5-Av3HOu1beqPJL7Ks-1rOA';
 
 const prefix = '?';
 
-var version = '**v0.2.0**';
+var version = '**v0.2.1**';
 
 var actualización = '_27-09-2020_';
 
