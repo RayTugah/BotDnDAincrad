@@ -1019,12 +1019,21 @@ bot.on('message', message=>{
             message.channel.send(embed_tierlist);
             break;
         case 'clear':
-            if(!args[0]) return message.reply('Por favor especifica el número')
-            message.channel.bulkDelete(args[0]).then(() => {
-                message.channel.send(args[0] + ' ' +"mensajes borrados.").then(msg => msg.delete(3000));
-              });
+            const amount = parseInt(args[0]);
+            if (isNaN(amount)) {
+            return message.reply('Ese no es un número válido');
+            }
+        
+            if (isNaN(amount)) {
+            return message.reply('Has puesto una cantidad errónea. Prueba ``?clear 5``');
+        } else if (amount < 2 || amount > 100) {
+            return message.reply('Tienes que poner un número entre 2 y 100.');
+        }
+        message.channel.bulkDelete(amount);
+        message.channel.send(amount + ' ' +'mensajes eliminados.');
             break;
     
+            
         default:
             message.channel.send('Este comando no existe, haz el favor y pon "?comandos"!');
             break;
