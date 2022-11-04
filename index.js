@@ -544,7 +544,7 @@ bot.on('message', message=>{
             .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('Dotes manual del jugador')
             .setDescription('?a la tercera va la vencida \u200B ?abalanzamiento felino \u200B ?abalanzarse con dos armas \u200B ?abjuracion de energia \u200B ?abrazo de la tierra \u200B ?absorber vida profano \u200B ?abstencion de materiales \u200B ?acechador ascetico \u200B ?acechador_pantano \u200B ?acechador_marcial \u200B ?acelerar expulsion \u200B ?acelerar_metamagia')
-            message.channel.send(embed_alma);
+            message.channel.send(embed_mjd);
             break;
 //////////////////////////////////////// 
 // A LA TERCERA VA LA VENCIDA
