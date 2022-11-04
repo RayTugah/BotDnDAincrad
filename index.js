@@ -543,7 +543,7 @@ bot.on('message', message=>{
             .setColor(0xeae3c6)
             .setAuthor(message.author.username, message.author.avatarURL())
             .setTitle('Dotes manual del jugador')
-            .setDescription('?a la tercera va la vencida \u200B ?abalanzamiento felino \u200B ?abalanzarse con dos armas \u200B ?abjuracion de energia \u200B ?abrazo de la tierra \u200B ?absorber vida profano \u200B ?abstencion de materiales \u200B ?acechador ascetico \u200B ?acechador_pantano \u200B ?acechador_marcial \u200B ?acelerar expulsion \u200B ?acelerar_metamagia')
+            .setDescription('?a la tercera va la vencida \n ?abalanzamiento felino \n ?abalanzarse con dos armas \n ?abjuracion de energia \n ?abrazo de la tierra \n ?absorber vida profano \n ?abstencion de materiales \n ?acechador ascetico \n ?acechador_pantano \n ?acechador_marcial \n ?acelerar expulsion \n ?acelerar_metamagia')
             message.channel.send(embed_mjd);
             break;
 //////////////////////////////////////// 
