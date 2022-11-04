@@ -32,7 +32,7 @@ bot.on('message', message=>{
             .addField('Versión', version, true)
             .addField('Servidor', message.guild.name, true)
             .setColor(0x00FFFB)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_hechizo1sp);
             break;
         case 'comunicado':
@@ -44,7 +44,7 @@ bot.on('message', message=>{
             .addField('\u200B', '\u200B')
             .addField('¿Cómo acceder al rol y al bot?', 'deberás entrar a la sala <#683314561004339280> y hacer click en la reacción del dado rojo. Automáticamente podrás ver todas las salas en cuestión.')
             .setColor(0x00FFFB)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_comunicado);
             message.channel.send("@everyone ");
             break;
@@ -56,7 +56,7 @@ bot.on('message', message=>{
             .addField('Versión', version, true)
             .addField('Servidor', message.guild.name, true)
             .setColor(0x00FFFB)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_hechizos);
             break;
 //////////////// CLASES ///////////////
@@ -565,7 +565,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'nivel 3º de personaje, cualquier dote de suerte, acceso al dominio de Suerte.')
             .addField('Beneficio', 'Puedes gastar una repetición de tirada de suerte como acción inmediata para utilizar el poder concedido del dominio de Suerte una vez adicional al día. \nSólo puedes usar este beneficio inmediatamente después de usar el poder concedido del dominio de Suerte (efectivamente, esta dote te permite una tercera oportunidad de tener éxito en una tirada). \n\nGanas una repetición de tirada de suerte al día.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote1sp);
             break;
         case 'third':
@@ -584,7 +584,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'nivel 3º de personaje, cualquier dote de suerte, acceso al dominio de Suerte.')
             .addField('Beneficio', 'Puedes gastar una repetición de tirada de suerte como acción inmediata para utilizar el poder concedido del dominio de Suerte una vez adicional al día. \nSólo puedes usar este beneficio inmediatamente después de usar el poder concedido del dominio de Suerte (efectivamente, esta dote te permite una tercera oportunidad de tener éxito en una tirada). \n\nGanas una repetición de tirada de suerte al día.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote1en);
             break;
 // ABALANZAMIENTO FELINO
@@ -602,7 +602,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'si usas la maniobra de carga contra un enemigo desprevenido, puedes hacer un ataque completo al final de la carga.')
             .addField('Especial', 'un guerrero del pueblo felino puede elegir abalanzamiento felino como una de sus dotes adicionales.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote2sp);
             break;
         case 'catfolk':
@@ -619,7 +619,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'si usas la maniobra de carga contra un enemigo desprevenido, puedes hacer un ataque completo al final de la carga.')
             .addField('Especial', 'un guerrero del pueblo felino puede elegir abalanzamiento felino como una de sus dotes adicionales.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote2en);
             break;
 // ABALANZARSE CON DOS ARMAS
@@ -639,7 +639,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'cuando realices una carga y empuñes un arma en cada mano, podrás atacar con ambas. Si eliges hacerlo, perderás el bonificador obtenido normalmente a las tiradas de ataque por realizar una carga, aunque seguirás sufriendo el penalizador -2 a tu CA. \n\nNormal: cuando se realiza una carga sólo se puede realizar un ataque al final del movimiento.')
             .addField('Especial', 'un explorador que haya elegido el estilo de combate con dos armas podrá hacer uso de esta dote, siempre que posea un ataque base de +6 y lleve armadura ligera o ninguna.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote3sp);
             break;
         case 'two':
@@ -656,7 +656,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'cuando realices una carga y empuñes un arma en cada mano, podrás atacar con ambas. Si eliges hacerlo, perderás el bonificador obtenido normalmente a las tiradas de ataque por realizar una carga, aunque seguirás sufriendo el penalizador -2 a tu CA. \n\nNormal: cuando se realiza una carga sólo se puede realizar un ataque al final del movimiento.')
             .addField('Especial', 'un explorador que haya elegido el estilo de combate con dos armas podrá hacer uso de esta dote, siempre que posea un ataque base de +6 y lleve armadura ligera o ninguna.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote3en);
             break;
 // ABJURACIÓN DE ENERGÍA
@@ -675,7 +675,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'cuando lanzas un conjuro de abjuración, puedes elegir obtener una resistencia a la energía especial igual a (1 + el nivel del conjuro) x 5. Esta resistencia a la energía se mantiene mientras dure el conjuro de abjuración o hasta que recibas daño de algún tipo de energía (ácido, frío, fuego, electricidad o sonido). La resistencia se aplica al primer daño de energía al que seas expuesto y a partir de ese momento, pierdes la resistencia a la energía hasta que lances otro conjuro de abjuración.')
             .addField('Especial', 'un abjurador puede seleccionar esta dote como una de sus dotes adicionales de mago')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote4sp);
             break;
         case 'energy':
@@ -692,7 +692,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'cuando lanzas un conjuro de abjuración, puedes elegir obtener una resistencia a la energía especial igual a (1 + el nivel del conjuro) x 5. Esta resistencia a la energía se mantiene mientras dure el conjuro de abjuración o hasta que recibas daño de algún tipo de energía (ácido, frío, fuego, electricidad o sonido). La resistencia se aplica al primer daño de energía al que seas expuesto y a partir de ese momento, pierdes la resistencia a la energía hasta que lances otro conjuro de abjuración.')
             .addField('Especial', 'un abjurador puede seleccionar esta dote como una de sus dotes adicionales de mago')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote4en);
             break;
 // ABRAZO DE LA TIERRA
@@ -709,7 +709,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'Fue 15, Presa mejorada o agarrón mejorado, Impacto sin arma mejorado')
             .addField('Beneficio', 'si sujetas a tu oponente al hacer una presa, infligirás 1d12 puntos de daño adicionales cada asalto en que lo mantengas sujeto. Tendrás inmovilizado a tu oponente del modo normal (con una prueba de presa enfrentada), pero tú también tendrás que quedarte completamente inmóvil, concediendo a tus oponentes (excepto al que estés sujetando) un bonificador +4 en sus tiradas de ataque contra ti (aunque no estarás indefenso). No obtienes este daño adicional contra criaturas que sean inmunes a los golpes críticos.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote5sp);
             break;
         case 'earth\'s':
@@ -725,7 +725,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'Fue 15, Presa mejorada o agarrón mejorado, Impacto sin arma mejorado')
             .addField('Beneficio', 'si sujetas a tu oponente al hacer una presa, infligirás 1d12 puntos de daño adicionales cada asalto en que lo mantengas sujeto. Tendrás inmovilizado a tu oponente del modo normal (con una prueba de presa enfrentada), pero tú también tendrás que quedarte completamente inmóvil, concediendo a tus oponentes (excepto al que estés sujetando) un bonificador +4 en sus tiradas de ataque contra ti (aunque no estarás indefenso). No obtienes este daño adicional contra criaturas que sean inmunes a los golpes críticos.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote5en);
             break;    
 // ABSORBER VIDA PROFANO
@@ -743,7 +743,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'como una acción estándar, puedes gastar dos de tus usos de reprender para infligir 1d6 puntos de daño a todas las criaturas vivas que se hallen en una explosión de 30\' de radio. Este efecto no puede reducir los puntos de golpe de ninguna criatura por debajo de 0. Recuperas tantos puntos de golpe como el total que hayas absorbido a las víctimas afectadas, pero esta curación no te permite superar tu total normal de puntos de golpe.')
             .addField('Especial', 'esta dote no inflige daño a constructos o muertos vivientes.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote6sp);
             break;
         case 'profane':
@@ -760,7 +760,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'como una acción estándar, puedes gastar dos de tus usos de reprender para infligir 1d6 puntos de daño a todas las criaturas vivas que se hallen en una explosión de 30\' de radio. Este efecto no puede reducir los puntos de golpe de ninguna criatura por debajo de 0. Recuperas tantos puntos de golpe como el total que hayas absorbido a las víctimas afectadas, pero esta curación no te permite superar tu total normal de puntos de golpe.')
             .addField('Especial', 'esta dote no inflige daño a constructos o muertos vivientes.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote6en);
             break;
 // ABSTENCIÓN DE MATERIALES
@@ -777,7 +777,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'nada')
             .addField('Beneficio', 'puedes lanzar cualquier conjuro que tenga un componente material que cueste 1 po o menos sin precisar ese componente, aunque lanzar el conjuro sigue provocando un ataque de oportunidad de forma normal. Si el conjuro requiere un componente material que cueste más de 1 po debes disponer de él para lanzar el conjuro, de la manera normal.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote7sp);
             break;
         case 'eschew':
@@ -793,7 +793,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'nada')
             .addField('Beneficio', 'puedes lanzar cualquier conjuro que tenga un componente material que cueste 1 po o menos sin precisar ese componente, aunque lanzar el conjuro sigue provocando un ataque de oportunidad de forma normal. Si el conjuro requiere un componente material que cueste más de 1 po debes disponer de él para lanzar el conjuro, de la manera normal.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote7en);
             break;
 // ACECHADOR ASCÉTICO
@@ -811,7 +811,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'tus niveles de monje y ninja se apilan a efectos de determinar el tamaño de tu reserva de ki. Por ejemplo, un monje de nivel 4/ninja de nivel 2 con esta dote podría usar sus poderes ki un número de veces igual a 3 (la mitad de la suma de sus niveles de monje y ninja) + su bonificador de Sabiduría (si lo tiene). Tus niveles de monje y ninja también se apilan a efectos de determinar tu daño de impacto sin armas, así como tu rasgo de clase de impacto ki. Por ejemplo, un monje de nivel 4/ninja de nivel 6 causaría 1d10 puntos de daño con su impacto sin armas y su impacto sin armas superaría la reducción de daño como si fuera un arma legal y mágica (como si fuera un monje de nivel 10º). Además, puedes multiclasear libremente entre las clases de monje y ninja. Todavía debes permanecer legal para continuar avanzando como monje. Todavía te enfrentas a las penalizaciones normales de PX por poseer múltiples clases separadas por más de un nivel.')
             .addField('Especial', 'un monje puede seleccionar Acechador ascético como dote adicional en los niveles 1º, 2º o 6º en lugar de una de las dotes indicadas para esos niveles.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote8sp);
             break;
         case 'ascetic':
@@ -828,7 +828,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'tus niveles de monje y ninja se apilan a efectos de determinar el tamaño de tu reserva de ki. Por ejemplo, un monje de nivel 4/ninja de nivel 2 con esta dote podría usar sus poderes ki un número de veces igual a 3 (la mitad de la suma de sus niveles de monje y ninja) + su bonificador de Sabiduría (si lo tiene). Tus niveles de monje y ninja también se apilan a efectos de determinar tu daño de impacto sin armas, así como tu rasgo de clase de impacto ki. Por ejemplo, un monje de nivel 4/ninja de nivel 6 causaría 1d10 puntos de daño con su impacto sin armas y su impacto sin armas superaría la reducción de daño como si fuera un arma legal y mágica (como si fuera un monje de nivel 10º). Además, puedes multiclasear libremente entre las clases de monje y ninja. Todavía debes permanecer legal para continuar avanzando como monje. Todavía te enfrentas a las penalizaciones normales de PX por poseer múltiples clases separadas por más de un nivel.')
             .addField('Especial', 'un monje puede seleccionar Acechador ascético como dote adicional en los niveles 1º, 2º o 6º en lugar de una de las dotes indicadas para esos niveles.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote8en);
             break;
 // ACECHADOR DEL PANTANO
@@ -843,7 +843,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'terreno de marjal.')
             .addField('Beneficio', 'te mueves fácilmente por los cenagales y el agua estancada de los pantanos. Obtienes un bonificador de competencia +2 en las pruebas de Nadar y en las pruebas de Fuerza para liberarte de redes, telarañas, conjuros de enredar e impedimentos similares. Esta dote no proporciona ningún bonificador en las pruebas de presa.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote9sp);
             break;
         case 'swamp':
@@ -858,7 +858,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'terreno de marjal.')
             .addField('Beneficio', 'te mueves fácilmente por los cenagales y el agua estancada de los pantanos. Obtienes un bonificador de competencia +2 en las pruebas de Nadar y en las pruebas de Fuerza para liberarte de redes, telarañas, conjuros de enredar e impedimentos similares. Esta dote no proporciona ningún bonificador en las pruebas de presa.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote9en);
             break;
 // ACECHADOR MARCIAL
@@ -873,7 +873,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'competencia con todas las armas marciales, poder ki.')
             .addField('Beneficio', 'tus niveles de guerrero y ninja se apilan a efectos de determinar el tamaño de tu reserva de ki, así como tu bonificador a la CA. Por ejemplo, un guerrero de nivel 5º/ninja de nivel 1 con esta dote podría usar sus poderes ki un número de veces igual a 3 (la mitad de sus niveles de ninja y guerrero) + su bonificador de Sab (si lo tiene), y tendría un bonificador +1 a la CA (como si fuera un ninja de nivel 6). \n\nTus niveles de guerrero y ninja también se apilan a efectos de cumplir los requisitos para dotes que necesitan un nivel mínimo de guerrero, como Soltura mayor con un arma.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote10sp);
             break;
         case 'martial':
@@ -888,7 +888,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'competencia con todas las armas marciales, poder ki.')
             .addField('Beneficio', 'tus niveles de guerrero y ninja se apilan a efectos de determinar el tamaño de tu reserva de ki, así como tu bonificador a la CA. Por ejemplo, un guerrero de nivel 5º/ninja de nivel 1 con esta dote podría usar sus poderes ki un número de veces igual a 3 (la mitad de sus niveles de ninja y guerrero) + su bonificador de Sab (si lo tiene), y tendría un bonificador +1 a la CA (como si fuera un ninja de nivel 6). \n\nTus niveles de guerrero y ninja también se apilan a efectos de cumplir los requisitos para dotes que necesitan un nivel mínimo de guerrero, como Soltura mayor con un arma.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote10en);
             break;            
 // ACELERAR EXPULSIÓN
@@ -904,7 +904,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'aptitud para expulsar o reprender muertos vivientes.')
             .addField('Beneficio', 'puedes expulsar o reprender muertos vivientes como acción gratuita. Sigues pudiendo hacer tan sólo un intento por turno.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote11sp);
             break;
         case 'quicken':
@@ -919,7 +919,7 @@ bot.on('message', message=>{
             .addField('Prerrequisitos', 'aptitud para expulsar o reprender muertos vivientes.')
             .addField('Beneficio', 'puedes expulsar o reprender muertos vivientes como acción gratuita. Sigues pudiendo hacer tan sólo un intento por turno.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote11en);
             break;
 // ACELERAR METAMAGIA
@@ -935,7 +935,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'elige una dote metamágica que conozcas. Puedes aplicar dicha dote metamágica a cualquier conjuro lanzado espontáneamente sin aumentar el tiempo de lanzamiento. \n\nNormal: sin esta dote, los conjuros metamágicos con tiempo de lanzamiento de 1 acción estándar requieren una acción es asalto completo para los lanzadores de conjuros espontáneos. Los conjuros metamágicos con un tiempo de lanzamiento mayor de 1 acción estándar cuestan a los lanzadores de conjuros espontáneos una acciónd e asalto completo adicional para poder usarlos.')
             .addField('Especial', 'puedes seleccionar Acelerar metamagia varias veces. Sus efectos no se apilan. Cada vez que la elijas, se aplica a una nueva dote metamágica.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote12sp);
             break;
         case 'accelerate':
@@ -951,7 +951,7 @@ bot.on('message', message=>{
             .addField('Beneficio', 'elige una dote metamágica que conozcas. Puedes aplicar dicha dote metamágica a cualquier conjuro lanzado espontáneamente sin aumentar el tiempo de lanzamiento. \n\nNormal: sin esta dote, los conjuros metamágicos con tiempo de lanzamiento de 1 acción estándar requieren una acción es asalto completo para los lanzadores de conjuros espontáneos. Los conjuros metamágicos con un tiempo de lanzamiento mayor de 1 acción estándar cuestan a los lanzadores de conjuros espontáneos una acciónd e asalto completo adicional para poder usarlos.')
             .addField('Especial', 'puedes seleccionar Acelerar metamagia varias veces. Sus efectos no se apilan. Cada vez que la elijas, se aplica a una nueva dote metamágica.')
             .setColor(0x00FF04)
-            .setThumbnail('https://i.imgur.com/b3pizy4.png')
+            .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_dote12en);
             break;
 //
