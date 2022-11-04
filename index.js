@@ -1021,11 +1021,7 @@ bot.on('message', message=>{
         case 'clear':
             message.delete()
             const amount = parseInt(args[0]);
-            if (isNaN(amount)) {
-            return message.reply('Ese no es un número válido');
-            }
-        
-            if (isNaN(amount)) {
+        if (isNaN(amount)) {
             return message.reply('Has puesto una cantidad errónea. Prueba ``?clear 5``');
         } else if (amount < 2 || amount > 100) {
             return message.reply('Tienes que poner un número entre 2 y 100.');
