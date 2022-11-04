@@ -1019,6 +1019,7 @@ bot.on('message', message=>{
             message.channel.send(embed_tierlist);
             break;
         case 'clear':
+            message.delete()
             const amount = parseInt(args[0]);
             if (isNaN(amount)) {
             return message.reply('Ese no es un número válido');
