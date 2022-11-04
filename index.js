@@ -7,7 +7,7 @@ const prefix = '?';
 
 var version = '**v0.2.1**';
 
-var actualización = '_27-09-2020_';
+var actualización = '_04-11-2022_';
 
 bot.on('ready', () =>{
     console.log('Bot encendido!');
@@ -537,6 +537,15 @@ bot.on('message', message=>{
             .setImage('https://i.imgur.com/UxWi3Z2.jpg')
             message.channel.send(embed_dotes);
             break;
+        case 'MJD':
+            message.delete()
+            const embed_mjd = new Discord.MessageEmbed()
+            .setColor(0xeae3c6)
+            .setAuthor(message.author.username, message.author.avatarURL())
+            .setTitle('Dotes manual del jugador')
+            .setDescription('?a la tercera va la vencida \u200B ?abalanzamiento felino \u200B ?abalanzarse con dos armas \u200B ?abjuracion de energia \u200B ?abrazo de la tierra \u200B ?absorber vida profano \u200B ?abstencion de materiales \u200B ?acechador ascetico \u200B ?acechador_pantano \u200B ?acechador_marcial \u200B ?acelerar expulsion \u200B ?acelerar_metamagia')
+            message.channel.send(embed_alma);
+            break;
 //////////////////////////////////////// 
 // A LA TERCERA VA LA VENCIDA
         case 'a':
@@ -994,8 +1003,8 @@ bot.on('message', message=>{
             const embed_patchnotes = new Discord.MessageEmbed()
             .setTitle('__**REGISTRO DE CAMBIOS**__')
             .setAuthor(message.author.username, message.author.avatarURL())
-            .addField(version, '-Añadidas 11 nuevas clases (Erudito de la Espada, Ninja, Oficial, Paladín, Psiónico, Pícaro, Robaconjuros, Samurai, Sanador, Shugenja y Wu Jen) \n\n-Añadida la clase Erudito de la Espada a la imagen de clases, ya que no existía anteriormente.', false)
-            .addField('**v0.1.9**', '-Añadidas 5 nuevas clases (Hechicero, Indómito, Mágico de guerra, Mago y Monje).\n\n-Sustituída la imagen en los comandos "?info", "?comandos" y "?utilidad" a el nuevo GIF del servidor.\n\n-Ahora cuándo escribes un comando inexistente, el mensaje te dirá que uses "?comandos"\n\n-Creación del comando "?patchnotes" para el historial de actualizaciones.', false)
+            .addField(version, 'Añadidas dotes de prueba al comando ?MJD para el testeo del funcionamiento de las dotes, para posteriores actualizaciones (SE VIENEN LAS DOTES GENTE!!)', false)
+            .addField('**v0.2.0**', '-Añadidas 11 nuevas clases (Erudito de la Espada, Ninja, Oficial, Paladín, Psiónico, Pícaro, Robaconjuros, Samurai, Sanador, Shugenja y Wu Jen) \n\n-Añadida la clase Erudito de la Espada a la imagen de clases, ya que no existía anteriormente.', false)
             .setColor(0xb1e7d4)
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_patchnotes);
