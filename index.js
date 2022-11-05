@@ -1003,8 +1003,8 @@ bot.on('message', message=>{
             const embed_patchnotes = new Discord.MessageEmbed()
             .setTitle('__**REGISTRO DE CAMBIOS**__')
             .setAuthor(message.author.username, message.author.avatarURL())
-            .addField(version, 'Añadidas dotes de prueba al comando ?MJD para el testeo del funcionamiento de las dotes, para posteriores actualizaciones (SE VIENEN LAS DOTES GENTE!!)', false)
-            .addField('**v0.2.0**', '-Añadidas 11 nuevas clases (Erudito de la Espada, Ninja, Oficial, Paladín, Psiónico, Pícaro, Robaconjuros, Samurai, Sanador, Shugenja y Wu Jen) \n\n-Añadida la clase Erudito de la Espada a la imagen de clases, ya que no existía anteriormente.', false)
+            .addField(version + ' ' + "(" + actualización + ")", 'Añadidas dotes de prueba al comando ``?MJD`` para el testeo del funcionamiento de las dotes, para posteriores actualizaciones (SE VIENEN LAS DOTES GENTE!!)', false)
+            .addField('**v0.2.0** (10/11/2020)', '-Añadidas 11 nuevas clases (Erudito de la Espada, Ninja, Oficial, Paladín, Psiónico, Pícaro, Robaconjuros, Samurai, Sanador, Shugenja y Wu Jen) \n\n-Añadida la clase Erudito de la Espada a la imagen de clases, ya que no existía anteriormente.', false)
             .setColor(0xb1e7d4)
             .setThumbnail('https://media.giphy.com/media/h4lGwljlzFcq94O6Fl/source.gif')
             message.channel.send(embed_patchnotes);
